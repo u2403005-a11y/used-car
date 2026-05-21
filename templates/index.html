@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Used Car Price Predictor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lucide/dist/lucide.min.js"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="background-glow"></div>
+    <div class="floating-particle particle-1"></div>
+    <div class="floating-particle particle-2"></div>
+    <div class="floating-particle particle-3"></div>
+    <div class="floating-particle particle-4"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">AI</span>
+        <div>
+          <h1>AutoSense</h1>
+          <p>Premium Price Intelligence</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#predict">Predict</a>
+        <a href="#about">About</a>
+        <a href="#footer">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero-section">
+      <section class="hero-copy glass-card fade-up">
+        <div class="hero-badge">AI Badge</div>
+        <h1>AI Used Car Price Predictor</h1>
+        <p>Predict accurate resale values instantly using Machine Learning.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#predict">Predict Now</a>
+          <div class="stat-card">
+            <span>98.6%</span>
+            <p>Model Confidence</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-visual glass-card fade-up delay-1">
+        <div class="hero-visual-content">
+          <div class="hero-chip">Premium</div>
+          <div class="hero-illustration">
+            <div class="car-shape"></div>
+            <div class="car-icon-wrapper">
+              <i data-lucide="car" class="car-icon"></i>
+            </div>
+          </div>
+          <div class="hero-details">
+            <div><strong>Luxury UI</strong> with glassmorphism</div>
+            <div><strong>Instant model</strong> predictions</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="predict" class="section predict-section">
+      <div class="section-header glass-card fade-up">
+        <span class="section-label">Prediction Section</span>
+        <h2>Predict Resale Price in Seconds</h2>
+        <p>Enter your car details and get a premium estimate instantly, styled with immersive effects.</p>
+      </div>
+
+      <div class="predict-grid">
+        <div class="predict-card glass-card fade-up delay-1">
+          <div class="card-header">
+            <div>
+              <p class="eyebrow">Vehicle Summary</p>
+              <h3>Glassmorphism input experience</h3>
+            </div>
+            <span class="badge">ML v1.0</span>
+          </div>
+
+          <form id="prediction-form" class="prediction-form">
+            <label>
+              <div class="input-label"><i data-lucide="calendar"></i>Car Year</div>
+              <input id="year" type="number" min="1900" max="2035" placeholder="Enter manufacture year" />
+            </label>
+
+            <label>
+              <div class="input-label"><i data-lucide="gauge"></i>Kilometers Driven</div>
+              <input id="kms_driven" type="number" min="0" step="1" placeholder="Enter kilometers driven" />
+            </label>
+
+            <button id="predict-button" type="submit" class="primary-button glow-button">
+              <span>Predict Price</span>
+              <div class="button-glow"></div>
+            </button>
+          </form>
+
+          <div id="form-message" class="form-message"></div>
+        </div>
+
+        <div class="result-card glass-card fade-up delay-2" id="result-card">
+          <div class="result-top">
+            <div>
+              <p class="eyebrow">Estimated Car Price</p>
+              <h3>Your premium prediction</h3>
+            </div>
+            <i data-lucide="zap"></i>
+          </div>
+
+          <div class="result-body">
+            <div class="result-ring"></div>
+            <div class="result-value">
+              <span class="currency"><i data-lucide="rupee"></i></span>
+              <span id="predicted-amount">0.00</span>
+            </div>
+            <p class="result-text">The forecast uses your inputs and scales through the trained model.</p>
+            <p id="model-suggestion" class="result-suggestion">Suggested models will appear here once prediction is ready.</p>
+          </div>
+
+          <div class="loading-overlay" id="loading-overlay">
+            <div class="loader"></div>
+            <p>Analyzing market patterns...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="section-header glass-card fade-up">
+        <span class="section-label">About Model</span>
+        <h2>Built for premium accuracy</h2>
+        <p>Our model applies standardized regression logic to deliver fast and reliable price estimates for buyers and sellers in India.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="feature-card glass-card fade-up delay-1">
+          <span class="feature-tag">Machine Learning</span>
+          <h3>Linear Regression + Scaling</h3>
+          <p>Features are normalized using scaler data to produce consistent and reliable predictions.</p>
+        </div>
+
+        <div class="feature-card glass-card fade-up delay-2">
+          <span class="feature-tag">Performance</span>
+          <h3>Fast & responsive</h3>
+          <p>Instant results with smooth animations and minimal latency for a premium user experience.</p>
+        </div>
+
+        <div class="feature-card glass-card fade-up delay-3">
+          <span class="feature-tag">Design</span>
+          <h3>Luxury glass interface</h3>
+          <p>Elegant UI design inspired by Apple and Tesla interfaces, with floating cards and soft blur layers.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="site-footer glass-card fade-up">
+      <div>
+        <p>AI Used Car Price Predictor</p>
+        <span>© 2026 AutoSense. Crafted for premium automotive decisions.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#predict">Predict</a>
+        <a href="#about">Model</a>
+        <a href="mailto:hello@autosense.ai">Contact</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
