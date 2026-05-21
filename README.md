@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Used Car Price Predictor
 
 A simple Flask web app for predicting used car prices based on the car year and kilometers driven.
@@ -89,3 +90,6 @@ http://127.0.0.1:5000/
 ## License
 
 This project is provided as-is for demonstration purposes.
+=======
+https://used-car-9b47.onrender.com/
+>>>>>>> e7013264ad9d71d67be6175b04d0b17267b2b95c
